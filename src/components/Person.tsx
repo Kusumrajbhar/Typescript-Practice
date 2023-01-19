@@ -7,12 +7,12 @@ type personProps = {
   };
 };
 
-function Person(props: personProps) {
+const Person = ({ name }: personProps) => {
   return (
     <div>
-      {props.name.firstName} {props.name.lastName}
+      {name.firstName} {name.lastName}
     </div>
   );
-}
+};
 
 export default Person;

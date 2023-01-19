@@ -11,7 +11,8 @@ function App() {
   };
   return (
     <div className="App">
-      <Greet name="kusum" messageCount={10} isLoggedIn={true} />
+      <Greet name="kusum" messageCount={10} />
+      {/* in Greet I haven't passed isLoggedIn value still it is not throwing error because I have given "?" condition and default value not passing  */}
       <Person name={personName} />
       <RefExample />
       {/* <RefSecondExp /> */}
